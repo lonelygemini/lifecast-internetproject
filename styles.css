@@ -4,24 +4,31 @@ header {box-sizing: border-box;
 background-color: white;
 margin: 5px auto;
 width:100%;
-position:absolute;}
+position:relative;}
 
 header li a {text-decoration: none;
 color:#500060;
 background-color: white;
-font-size: large;}
+font-size: large;
+transition: color 2s;}
 
-img  {object-position:center ;
-width: 1200px;}
+header li a:hover {color:rgb(188, 130, 239);
+    background-color:#500060;
+transition: 1000ms linear;}
 
 nav ul {display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: start;
-align-items: center;
-list-style-type: none;
-text-decoration-line: none;
-gap: 10px;}
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    text-decoration-line: none;
+    gap: 10px;}
+
+img  {object-position:center ;
+width: 75em;}
+
+h1 {padding-bottom: 3em;}
 
 #profiles {display: flex;
     flex-direction: row;
@@ -30,51 +37,69 @@ gap: 10px;}
     align-items: center;
     list-style-type: none;
     text-decoration-line: none;
-    gap: 10px;
-padding-bottom: 2.5rem}
+    gap: 10px;}
 
-li p {max-width: 300px;
-border:#500060}
+#thumbnails {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    text-decoration-line: none;
+    gap: 20px;}
+
+#index {padding-bottom: 12.5em}
+
+#episodes {padding-bottom: 12.5em}
+
+li img {max-width: 18.75em;}
+
+li p {max-width: 318.75em;}
 
 h1 {margin-left: 15px;
     margin-bottom: -15px;
-    max-width:1000px;}
+    max-width:62.5em;}
 
 h2 {margin-bottom: -15px;
     margin-left: 15px;
-    max-width:1000px;}
+    max-width:62.5;}
 
 p {
     box-sizing: border-box;
     color: #500060;
     margin:10px;
-    max-width: 1000px;
+    max-width: 62.5em;
     text-align:left ; 
-    border: 0px; ;
+    border: 0px;
     border-style: solid;
     padding: 10px;
 }
 
-body a {object-position: center;
+body a {
 margin-top: 20px;
 margin-bottom: 20px;
 margin-left:20px;
 padding:10px;
 background-color: #500060;
 text-decoration: none;
-color:white;}
+color:white;
+transition: color 5s;
+}
+
+body a:hover {background-color:blueviolet;}
 
 footer p {color:white}
 
 #page-container {position: relative;
 min-height: 100vh}
 
+
 footer {
     background-color: #500060;
     box-sizing: border-box;
     width: 100%;
     margin-top:20px;
-    height: 100px;
+    height: 6.25em;
     border-style:solid;
     padding:5px auto;
     position: absolute;
