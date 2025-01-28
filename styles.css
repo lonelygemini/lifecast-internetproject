@@ -59,10 +59,10 @@ nav ul {display: flex;
     text-decoration-line: none;
     gap: 10px;}
 
-main img {width: 500px;}
+img {width: 500px;}
 
 img  {object-position:center ;
-width: 75em;}
+width: 55em;}
 
 #profiles {display: flex;
     flex-direction: row;
