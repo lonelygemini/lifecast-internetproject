@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LIFECAST: Afleveringen</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="over-ons.html">Over ons</a></li>
-                    <li><a href="afleveringen.html" class="focus">Afleveringen</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <h1>Luister naar onze afleveringen nu!</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFECAST: Afleveringen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-            <div id="thumbnails">
-                <ul>
+<body>
+    <header>
+        <button id="darkmode-toggle">🌙</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over-ons.html">Over ons</a></li>
+                <li><a href="afleveringen.html" class="focus">Afleveringen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Luister naar onze afleveringen nu!</h1>
+
+        <div id="thumbnails">
+            <ul>
                     <li>
                         <img src="images/THUMBNAIL_CONTENT_1-09.png" alt="#1 thumbnail">
                         <h2>#1 Welkom bij LIFECAST:</h2>
@@ -74,14 +76,22 @@
                         <audio controls>
                             <source src="sounds/teaser_lifecast.mp3" type="audio/mpeg">
                         </audio>
-                    </li>
-                </ul>
-            </div>
-        </main>
+            </ul>
+        </div>
+    </main>
 
-        <footer>
-            <p>©2024 | gemaakt door Julia Wang</p>
-        </footer>
-    </body>
+    <footer>
+        <p>©2024 | gemaakt door Julia Wang</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("darkmode-toggle");
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+        });
+    </script>
+</body>
 </html>
+
 

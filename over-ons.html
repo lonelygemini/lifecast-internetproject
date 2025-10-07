@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFECAST: Over ons</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
+        <button id="darkmode-toggle">🌙</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,46 +20,52 @@
     </header>
 
     <main>
-
         <img src="images/THUMBNAIL_CONTENT_1-02.png" alt="lifecastimg">
+
         <h1>Over ons</h1>
         <p>In onze podcast LIFECAST duiken we in de wereld van dilemma's. 
-            We lezen jullie verhalen en geven onze eerlijke mening en advies, 
-            gebaseerd op onze eigen ervaringen en levenslessen. Of je nu vastzit in een ingewikkelde 
-            situatie of gewoon benieuwd bent naar wat anderen meemaken - wij staan klaar met een flinke 
-            dosis humor, eerlijkheid, en soms een tikkeltje ongezouten advies.</p>
+        We lezen jullie verhalen en geven onze eerlijke mening en advies, 
+        gebaseerd op onze eigen ervaringen en levenslessen.</p>
 
         <article>
             <h2>Waarom de naam LIFECAST?</h2>
             <p>Nou, simpel. Het leven is een shitshow, en wij zijn hier om het commentaar te leveren dat 
-                je vrienden je nooit durven te geven. Van liefde tot werkdrama’s – we got you. En ja, ik ben 
-                hier voor dat ongezouten advies waar je achteraf oh damn van zegt.</p>
+            je vrienden je nooit durven te geven. Van liefde tot werkdrama's, we got you. En ja, ik ben 
+            hier voor dat ongezouten advies waar je achteraf oh damn van zegt.</p>
 
-            <p>Dus pak die thee (of een shot tequila) en luister naar LIFECAST – de podcast waar we jouw problemen het podium geven.</p>
+            <p>Dus pak die thee (of een shot tequila) en luister naar LIFECAST, de podcast waar we jouw problemen het podium geven.</p>
         </article>
 
         <article>
             <h2>Hoe het begon</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo...</p>
+            <p>Het idee voor LIFECAST ontstond eigenlijk heel spontaan. Tijdens een avond vol 
+            gesprekken over de kleine en grote struggles van het leven, van liefdesdrama's 
+            tot werkstress — realiseerden we ons dat we allemaal wel met vragen en dilemma's 
+            rondlopen.</p>
+
+            <p>We besloten die gesprekken niet langer alleen voor onszelf te houden. Zo werd LIFECAST geboren: 
+            een plek waar we samen lachen, relativeren en misschien zelfs af en toe wat leren.</p>
         </article>
 
         <div id="profiles">
             <ul>
                 <li>
                     <h2>Anneke</h2>
-                    <img src="images/person-gray-photo-placeholder-woman-t-shirt-white-background-131683043.jpg" alt="placeholder1">
-                    <p>Ik ben Anneke Slagter, 21 jaar...</p>
+                    <img src="images/person-gray-photo-placeholder-woman-t-shirt-white-background-131683043.jpg" alt="Anneke">
+                    <p>Ik ben Anneke Slagter, 21 jaar, en ik ben de denker van ons trio. 
+                    Ik hou ervan om alles te analyseren en te kijken naar de diepere betekenis achter situaties.</p>
                 </li>
                 <li>
                     <h2>Rosa</h2>
-                    <img src="images/1b2e314e767a957a44ed8f992c6d9098.jpg" alt="placeholder2">
-                    <p>Hey lieve luisteraars! Mijn naam is Rosa...</p>
+                    <img src="images/1b2e314e767a957a44ed8f992c6d9098.jpg" alt="Rosa">
+                    <p>Hey lieve luisteraars! Mijn naam is Rosa, en ik ben de spontane flapuit van de groep. 
+                    Verwacht van mij eerlijkheid, een flinke dosis sarcasme en altijd wel een onverwachte draai.</p>
                 </li>
                 <li>
                     <h2>Julia</h2>
-                    <img src="images/istockphoto-1177794485-612x612.jpg" alt="placeholder3">
-                    <p>Heyo allemaal, ik ben Julia Wang...</p>
+                    <img src="images/istockphoto-1177794485-612x612.jpg" alt="Julia">
+                    <p>Heyo allemaal, ik ben Julia Wang, en ik ben de optimist van ons team. 
+                    Ik zie overal kansen en probeer in elk verhaal iets positiefs te vinden.</p>
                 </li>
             </ul>
         </div>
@@ -70,6 +75,12 @@
         <p>©2024 | gemaakt door Julia Wang</p>
     </footer>
 
+    <script>
+        const toggle = document.getElementById("darkmode-toggle");
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+        });
+    </script>
 </body>
-
 </html>
